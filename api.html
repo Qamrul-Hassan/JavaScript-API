@@ -8,10 +8,20 @@
 
 
     <style>
-        .card {
-            max-width: 300px;
+        #card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
             padding: 20px;
-            margin: 20px auto;
+            overflow-x: auto;
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+         
+
+        .card {
+            padding: 20px;
             background-color: #f8f9fa;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 0.2);
